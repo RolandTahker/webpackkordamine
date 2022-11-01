@@ -12,15 +12,18 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/RolandTahker/webpackkordamine"
-},
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/RolandTahker/webpackkordamine/issues"
-},
-"homepage": "https://github.com/RolandTahker/webpackkordamine#readme",
+  },
+  "homepage": "https://github.com/RolandTahker/webpackkordamine#readme",
   "dependencies": {
+    "@googlemaps/js-api-loader": "^1.14.3",
+    "axios": "^0.27.2",
+    "chart.js": "^3.9.1",
     "twig-loader": "^0.5.5",
     "vue-router": "^4.1.5",
     "webpack": "^5.74.0"

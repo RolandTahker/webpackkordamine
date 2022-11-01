@@ -1,17 +1,30 @@
 <template>
     <div class="columns">
         <div class="column is-one-third has-text-centered">
-            <b>{{bears}} bears</b>
+            <b>{{bears}} clicks</b>
             <br>
-            <b>{{cps}} bears per second</b>  
-            <img @click="bearClick()" :class="{'click': clickClass}" src="https://placebear.com/800/600">   
+            <b>{{cps}} clicks per second</b>  
+            <br>
+            <br>
+            <img @click="bearClick()" :class="{'click': clickClass}" src="https://www.animatedimages.org/data/media/1096/animated-click-here-sign-and-button-image-0042.gif">   
         </div>
-        <div class="column">
-            <button @click="upgrade(0.1, 10)" class="button is-primary" :disabled="bears<10">Buy 0.1 cps for 10 bears</button>     
-            <button @click="upgrade(1, 100)" class="button is-primary" :disabled="bears<100">Buy 1 cps for 100 bears</button> 
-            <button @click="upgrade(10, 1000)" class="button is-primary" :disabled="bears<1000">Buy 10 cps for 1000 bears</button>      
-            <button @click="upgrade(100, 10000)" class="button is-primary" :disabled="bears<10000">Buy 100 cps for 10000 bears</button> 
-            <button @click="upgrade(1000, 100000)" class="button is-primary" :disabled="bears<100000">Buy 1000 cps for 100000 bears</button>         
+        <div class="column" style="width: 100%;">
+            <button @click="upgrade(0.1, 10)" class="button is-dark" :disabled="bears<10" style="width: 30%;">Buy 0.1 cps for 10 clicks</button>
+            <br> 
+            <br> 
+            <button @click="upgrade(1, 100)" class="button is-dark" :disabled="bears<100" style="width: 30%;">Buy 1 cps for 100 clicks</button> 
+            <br>
+            <br>
+            <button @click="upgrade(10, 1000)" class="button is-dark" :disabled="bears<1000" style="width: 30%;">Buy 10 cps for 1000 clicks</button> 
+            <br>   
+            <br>  
+            <button @click="upgrade(100, 10000)" class="button is-dark" :disabled="bears<10000" style="width: 30%;">Buy 100 cps for 10000 clicks</button> 
+            <br>
+            <br>
+            <button @click="upgrade(1000, 100000)" class="button is-dark" :disabled="bears<100000" style="width: 30%;">Buy 1000 cps for 100000 clicks</button>
+            <br>
+            <br>
+            <button @click="upgrade(1000, 100000)" class="button is-dark" :disabled="bears<1000000" style="width: 30%;">Buy 10000 cps for 1000000 clicks</button>         
         </div>
     </div>
   
@@ -59,6 +72,7 @@ export default {
     }
 
 }
+
 </script>
 
 <style scoped>
@@ -66,4 +80,7 @@ export default {
         transform: scale(0.9);
     }
 
+b {
+    color: darkgrey;
+}
 </style>
