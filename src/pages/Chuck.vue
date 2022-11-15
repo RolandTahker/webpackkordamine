@@ -22,7 +22,7 @@ export default {
 <style>
 h2 {
     text-align: center;
-    color: rgba(58, 28, 28, 0.808);
+    color: rgba(219, 214, 214, 0.808);
     font-family: sans-serif;
     font-size: 15pt;
 }

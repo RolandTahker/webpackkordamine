@@ -9,6 +9,9 @@
             <img @click="bearClick()" :class="{'click': clickClass}" src="https://www.animatedimages.org/data/media/1096/animated-click-here-sign-and-button-image-0042.gif">   
         </div>
         <div class="column" style="width: 100%;">
+            <button class="button is-black" style="width: 30%;">CPS SHOP!</button>
+            <br> 
+            <br> 
             <button @click="upgrade(0.1, 10)" class="button is-dark" :disabled="bears<10" style="width: 30%;">Buy 0.1 cps for 10 clicks</button>
             <br> 
             <br> 
@@ -73,6 +76,14 @@ export default {
 
 }
 
+/*
+You'll probably want to drop a cookie so this doesn't pop up everytime. I'd reccomend this plugin:
+https://github.com/js-cookie/js-cookie
+*/
+
+
+
+
 </script>
 
 <style scoped>
@@ -83,4 +94,5 @@ export default {
 b {
     color: darkgrey;
 }
+    
 </style>
