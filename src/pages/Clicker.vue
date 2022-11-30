@@ -5,13 +5,16 @@
             <button class="button2" style="width: 40%; height: 8%;">{{sps}} STONES PER SECOND</button>  
             <br>
             <br>
-            <img @click="stoneClick()" :class="{'click': clickClass}" src="https://www.animatedimages.org/data/media/1096/animated-click-here-sign-and-button-image-0042.gif">   
+            <img @click="stoneClick()" :class="{'click': clickClass}" src="https://www.animatedimages.org/data/media/1096/animated-click-here-sign-and-button-image-0042.gif">
+            <br>
+            <img @click="stoneClick2()" :class="{'click': clickClass2}" class="kratos" src="https://i.pinimg.com/originals/db/f2/55/dbf255f9f7ba73f466e9129fc698d779.gif">
+            <img @click="stoneClick2()" :class="{'click': clickClass2}" class="kratos" src="">
         </div>
         <div class="column" style="width: 100%;">
             <button class="button1" style="width: 30%; height: 15%;">SPS SHOP!</button>
             <br> 
             <br> 
-            <button @click="upgrade(0.1, 10)" class="button is-dark" :disabled="stones<10" style="width: 30%; height: 10%;">Buy 0.1 sps for 10 stones</button>        
+            <button @click="upgrade(0, 10)" class="button is-dark" :disabled="stones<10" style="width: 30%; height: 10%;">Buy 0.1 sps for 10 stones</button>        
             <br> 
             <br> 
             <button @click="upgrade(1, 100)" class="button is-dark" :disabled="stones<100" style="width: 30%; height: 10%;">Buy 1 sps for 100 stones</button> 
@@ -33,8 +36,6 @@
             <button @click="upgrade2(0, 0)" class="button is-dark" :disabled="stones<1" style="width: 30%; height: 10%;">GO BACK TO START</button>       
         </div>
     </div>
-
-  
 </template> 
 
 <script>
@@ -114,5 +115,9 @@ img.click {
     background-color: rgba(148, 56, 56, 0.699);
     height : 30px;
     color: white;
-}   
+}
+.kratos {
+    margin-bottom: 20%;
+}
+
 </style>
